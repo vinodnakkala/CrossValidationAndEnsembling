@@ -2,7 +2,7 @@
 
 A project to show power of cross Validation on a small dataset
 
-Executive Summary
+Executive Summary:
 This report showcases the importance of cross validation techniques and model Ensembling. For our analysis, we took a bank marketing data set from UCI repository having 690 observations and 15 dimensions. This is a classification problem with outcome as a binary variable. We followed approaches of validation techniques to demonstrate how the model accuracy improves over one another along with the model ensembling technique using majority voting.
 Firstly, we performed the basic validation technique i.e. simple validation hold out method and scored the results on the validation data using four models random forest, xgBoost, Decision tree and logistic regression. The highest accuracy is observed on the xgboost model which is around 85%. We got an accuracy of 79% when scored results on the test data. 
 Secondly, we performed the k fold cross validation technique to evaluate the models. For 5 fold cross-validation approach, the log loss values are not consistent for logistic regression, hence we did not choose this model. The xgboost and random forest log loss values are consistent ,but the values of xgboost are high when compared to the random forest. Hence , we choose random forest for the 5 fold cross validation technique and scored the test results where the accuracy improved to 87%.
